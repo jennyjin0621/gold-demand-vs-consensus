@@ -1,0 +1,13 @@
+pandas>=2.1
+numpy
+matplotlib
+statsmodels
+requests
+yfinance>=0.2.40
+akshare
+openpyxl
+jupyter
+nbformat
+pytest
+# optional, only for LLM extraction of bank targets
+# anthropic
