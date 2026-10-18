@@ -1,7 +1,5 @@
 # Gold Demand vs Consensus
 
-Starter repo for the student research project on what drives gold now, whether demand signals predict returns, and whether bank forecasts add anything. The full project guide (motivation, steps, red flags) is in the PDF your mentor sent.
-
 **Question.** Gold's link to real yields broke around 2022, and the story since has been about who is buying. Can we measure that demand, does it predict returns or vol out of sample, and do bank price targets beat a naive forecast?
 
 ## Setup
@@ -33,8 +31,8 @@ tests/
 
 ## Where to go
 
-- [ ] **Week 1 (everyone).** Run the sanity notebook. Every series plotted and spot-checked against a public source, weekly panel built, rough date of the real-yield break noted.
-- **After that, it's open.** Directions we think are worth chasing (pick, combine, or pitch your own):
+- [ ] **Week 1.** Run the sanity notebook. Every series plotted and spot-checked against a public source, weekly panel built, rough date of the real-yield break noted.
+- **After that, it's open.** Directions I think are worth chasing (pick, combine, or pitch your own):
   - What replaced real yields? Rolling factor model with demand factors, model-implied fair value.
   - Do demand signals predict anything? Returns or GVZ, out of sample, with a random-signal control.
   - Are the banks any good? LLM-extracted bank targets scored against a naive forecast.
