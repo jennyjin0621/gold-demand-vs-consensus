@@ -7,7 +7,7 @@ Starter repo for the student research project on what drives gold now, whether d
 ## Setup
 
 ```bash
-git clone <this repo> && cd gold-demand-vs-consensus
+git clone https://github.com/jennyjin0621/gold-demand-vs-consensus.git && cd gold-demand-vs-consensus
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 pytest -q                          # passes on synthetic data
@@ -31,14 +31,15 @@ scripts/demo_synthetic.py
 tests/
 ```
 
-## Week-by-week checklist
+## Where to go
 
-- [ ] **Week 1.** Run the sanity notebook. Every series plotted and spot-checked against a public source.
-- [ ] **Week 2.** Factor model. Rolling betas on real yields and dollar, find and date the break. Add demand factors (Shanghai premium, GLD flows, COT, central bank buying).
-- [ ] **Week 3.** Signal tests. Pick an out-of-sample split date first and write it down. Predictive regressions at 1w and 4w for returns and for GVZ changes. Keep a log of every test you run.
-- [ ] **Week 4.** Consensus dataset. Extract 50+ bank targets with the LLM pipeline, hand-check 20%, score vs naive.
-- [ ] **Week 5.** Strategy. Simple rule from surviving signals, backtest with costs, out of sample only.
-- [ ] **Week 6.** Trade memo. Where does the model disagree with consensus right now? Options expression, size, invalidation level.
+- [ ] **Week 1 (everyone).** Run the sanity notebook. Every series plotted and spot-checked against a public source, weekly panel built, rough date of the real-yield break noted.
+- **After that, it's open.** Directions we think are worth chasing (pick, combine, or pitch your own):
+  - What replaced real yields? Rolling factor model with demand factors, model-implied fair value.
+  - Do demand signals predict anything? Returns or GVZ, out of sample, with a random-signal control.
+  - Are the banks any good? LLM-extracted bank targets scored against a naive forecast.
+  - Make it tradeable. Simple rule, backtest with costs, out of sample only.
+- Bring back a notebook that runs from a fresh clone and a one-page trade view grounded in what you found.
 
 ## Rules of thumb
 

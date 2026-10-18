@@ -59,7 +59,7 @@ for name in ["d_sh_prem", "gld_flow", "mm_net"]:
     print(name, md.predictive_regression(wk[name], fwd1, horizon=1))
 rng = np.random.default_rng(0)
 print("random", md.predictive_regression(pd.Series(rng.normal(size=len(wk)), wk.index), fwd1, horizon=1))"""),
-md("""## Questions to answer before week 2
+md("""## Questions to answer before moving on
 
 1. Does your Shanghai premium match public charts? What happens with `lag_spot=0`?
 2. Are COT signals indexed by availability date? What changes if you (wrongly) use report dates?
